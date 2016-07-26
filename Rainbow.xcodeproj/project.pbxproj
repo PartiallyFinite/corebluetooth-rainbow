@@ -12,6 +12,9 @@
 		374346891D478643001A570A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374346871D478643001A570A /* Main.storyboard */; };
 		3743468B1D478643001A570A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3743468A1D478643001A570A /* Assets.xcassets */; };
 		3743468E1D478643001A570A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3743468C1D478643001A570A /* LaunchScreen.storyboard */; };
+		374346961D478781001A570A /* BTLEMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374346951D478781001A570A /* BTLEMaster.swift */; };
+		374346981D47878C001A570A /* BTLESlave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374346971D47878C001A570A /* BTLESlave.swift */; };
+		376662BF1D47A04A00B09B43 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376662BE1D47A04A00B09B43 /* Colour.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3743468A1D478643001A570A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3743468D1D478643001A570A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3743468F1D478643001A570A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		374346951D478781001A570A /* BTLEMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTLEMaster.swift; sourceTree = "<group>"; };
+		374346971D47878C001A570A /* BTLESlave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTLESlave.swift; sourceTree = "<group>"; };
+		376662BE1D47A04A00B09B43 /* Colour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				374346831D478643001A570A /* AppDelegate.swift */,
 				374346851D478643001A570A /* ViewController.swift */,
+				374346951D478781001A570A /* BTLEMaster.swift */,
+				374346971D47878C001A570A /* BTLESlave.swift */,
+				376662BE1D47A04A00B09B43 /* Colour.swift */,
 				374346871D478643001A570A /* Main.storyboard */,
 				3743468A1D478643001A570A /* Assets.xcassets */,
 				3743468C1D478643001A570A /* LaunchScreen.storyboard */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376662BF1D47A04A00B09B43 /* Colour.swift in Sources */,
+				374346981D47878C001A570A /* BTLESlave.swift in Sources */,
 				374346861D478643001A570A /* ViewController.swift in Sources */,
 				374346841D478643001A570A /* AppDelegate.swift in Sources */,
+				374346961D478781001A570A /* BTLEMaster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +271,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Rainbow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MostlyInfinite.Rainbow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -271,6 +284,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Rainbow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MostlyInfinite.Rainbow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +311,7 @@
 				374346941D478643001A570A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
